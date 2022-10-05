@@ -14,17 +14,17 @@
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  F   |  P   |  G   |                                                            |  J   |  L    |  U    |  Y   |   ;   |   \  |
-// |  TAB  |  A  |  S  |  S   |  T   |  D   |                                                            |  H   |  N    |  E    |  I   |   O   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  ALT  | ????? |                            | CTRL  |SPECIAL|  K   |  M    |  ,    |  .   |   /   |  RET |
+// |  TAB  |  A  |  S  |  S   |  T   |  D   |                                                            |  M   |  N    |  E    |  I   |   O   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  ALT  | ????? |                            | CTRL  |SPECIAL|  K   |  H    |  ,    |  .   |   /   |  RET |
 //                     |  F2  | GUI  | RET  | SPACE | LOWER |                            | RAISE |  BSPC | SPACE| GUI   |  F5   |
 			bindings = <
 &kp ESC   &kp Q &kp W &kp F    &kp P    &kp G                                                            &kp J     &kp L    &kp U     &kp Y   &kp SEMI  &kp BSLH
-&kp TAB   &kp A &kp R &kp S    &kp T    &kp D                                                            &kp H     &kp N    &kp E     &kp I   &kp O     &kp SQT
-&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B     &kp LALT  &trans                  &kp RCTRL  &mo 3     &kp K     &kp M    &kp COMMA &kp DOT &kp FSLH  &kp RET
+&kp TAB   &kp A &kp R &kp S    &kp T    &kp D                                                            &kp M     &kp N    &kp E     &kp I   &kp O     &kp SQT
+&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B     &kp LALT  &trans                  &kp RCTRL  &mo 3     &kp K     &kp H    &kp COMMA &kp DOT &kp FSLH  &kp RET
                       &kp F2   &kp LGUI &kp SPACE &kp LSHFT &mo 1                   &mo 2      &kp BSPC  &kp SPACE &kp RGUI &kp F5
 		      >;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 		};
 		lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
