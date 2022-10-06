@@ -44,13 +44,13 @@
 		raise_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                                                            |  F7  |   F8  |   F9  |  F10  |  F11 |  F12 |
-// |       |  _  |     |      |   _  |  -   |                                                            |   £  |  HOME |   ⬆  |  END  |  pipe |   "   |
-// | SHIFT |  !  |  @  |  #   |  $   |      |       |       |                            |       |       |   $  |   ⬅  |   ⬇   |   ⮕  |   ?   |  RET |
+// |       |     |     |      |   _  |  -   |                                                            |   £  |  HOME |   ⬆  |  END  |  pipe |   "   |
+// | SHIFT |     |  @  |  #   |  $   |      |       |       |                            |       |       |   $  |   ⬅  |   ⬇   |   ⮕  |   ?   |  RET |
 //                     |  rot | OPT  | CTRL | CMD   | LOWER |                            | RAISE | SPACE | BSPC | OPT   |  rot   |
 			bindings = <
-&kp F1     &kp F2    &kp F3      &kp F4    &kp F5    &kp F6                                              &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&trans     &kp UNDER &kp LPAR    &kp EQUAL &kp RPAR  &kp MINUS                                           &kp F7    &kp HOME  &kp UP    &kp END   &kp PIPE  &kp DQT
-&kp RSHIFT &kp EXCL  &kp AT_SIGN &kp HASH  &kp DLLR  &trans  &trans    &trans       &trans    &trans     &kp DLLR  &kp LEFT  &kp DOWN  &kp RIGHT &kp QMARK &kp RET
+&kp F1     &kp F2    &kp F3      &kp F4    &kp F5    &kp F6                                               &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+&trans     &trans    &trans      &trans    &kp UNDER &kp MINUS                                            &kp QMARK &kp HOME  &kp UP    &kp END   &kp PIPE  &kp DQT
+&kp RSHIFT &trans  &kp AT_SIGN &kp HASH  &kp DLLR  &trans  &trans    &trans       &trans    &trans        &kp DLLR  &kp LEFT  &kp DOWN  &kp RIGHT &kp QMARK &kp RET
                                  &trans   &kp LGUI &kp LCTRL &kp LCMD &mo 1         &mo 2     &kp SPACE &kp DEL  &kp RGUI &trans
 		      >;
 
