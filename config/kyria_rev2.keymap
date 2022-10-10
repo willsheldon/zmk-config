@@ -29,13 +29,13 @@
 		lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // |    `  |  ~  |  {  |  *   |  }   |  +   |                                                            |  -   |   7   |   8   |   9  |       | POWER|
-// | SHIFT |  <  |  (  |  =   |  )   |  >   |                                                            |  +   |   4   |   5   |   6  |  bright_dn |  bright_up   |
-// |  ^  |  !  |  [  |  &   |  ]   |  %   |       |       |                            |       |       |      |   1   |   2   |   3  |   ?   |  RET |
+// | SHIFT |  <  |  (  |  =   |  )   |  >   |                                                            |  +   |   4   |   5   |   6  |   | RET
+// |  ^  |  !  |  [  |  &   |  ]   |  %   |       |       |                            |       |       |      |   1   |   2   |   3  |   bright_dn |  bright_up   |
 //                     |  rot | OPT  | CTRL | CMD   | LOWER |                            | RAISE | SPACE | BSPC |   0   |  rot   |
 			bindings = <
-&kp GRAVE   &kp TILDE &kp LBRC &kp KP_ASTERISK &kp RBRC  &kp PLUS                                             &kp KP_MINUS &kp KP_N7 &kp KP_N8 &kp KP_N9 &trans    &kp K_PWR
-&kp RSHIFT   &kp LT    &kp LPAR &kp EQUAL       &kp RPAR  &kp GT                                               &kp KP_PLUS  &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp C_BRI_DN  &kp C_BRI_UP
-&kp CARET  &kp EXCL  &kp LBKT &kp AMPS        &kp RBKT  &kp PRCNT  &trans    &trans     &trans    &trans     &trans       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp QMARK &kp RET
+&kp GRAVE   &kp TILDE &kp LBRC &kp KP_ASTERISK &kp RBRC  &kp PLUS                                              &kp KP_MINUS &kp KP_N7 &kp KP_N8 &kp KP_N9 &trans      &kp K_PWR
+&kp RSHIFT   &kp LT    &kp LPAR &kp EQUAL       &kp RPAR  &kp GT                                               &kp KP_PLUS  &kp KP_N4 &kp KP_N5 &kp KP_N6 &trans      &kp RET
+&kp CARET  &kp EXCL  &kp LBKT &kp AMPS        &kp RBKT  &kp PRCNT  &trans    &trans     &trans    &trans     &trans       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp C_BRI_DN  &kp C_BRI_UP
                        &trans   &kp RCTRL    &kp RALT &kp RCMD  &mo 1                &mo 2     &kp SPACE  &kp DEL      &kp KP_N0 &trans
 		      >;
 
@@ -44,13 +44,13 @@
 		raise_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                                                            |  F7  |   F8  |   F9  |  F10  |  F11 |  F12 |
-// |       |     |     |      |   _  |  -   |                                                            |   £  |  HOME |   ⬆  |  END  |  pipe |   "   |
-// | SHIFT |     |  @  |  #   |  $   |      |       |       |                            |       |       |   $  |   ⬅  |   ⬇   |   ⮕  |   ?   |  RET |
+// |       |     |     |      |   _  |  -   |                                                            |   £  |  HOME |   ⬆  |  END  |  pipe |  RET  |
+// | SHIFT |     |  @  |  #   |  $   |      |       |       |                            |       |       |   $  |   ⬅  |   ⬇   |   ⮕  |   ?   |  "   |
 //                     |  rot | OPT  | CTRL | CMD   | LOWER |                            | RAISE | SPACE | BSPC | OPT   |  rot   |
 			bindings = <
 &kp F1     &kp F2    &kp F3      &kp F4    &kp F5    &kp F6                                               &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&kp SHIFT  &trans    &trans      &trans    &kp UNDER &kp MINUS                                            &kp QMARK &kp HOME  &kp UP    &kp END   &kp PIPE  &kp DQT
-&trans     &trans  &kp AT_SIGN &kp HASH  &kp DLLR  &trans  &trans    &trans       &trans    &trans        &kp DLLR  &kp LEFT  &kp DOWN  &kp RIGHT &kp QMARK &kp RET
+&kp SHIFT  &trans    &trans      &trans    &kp UNDER &kp MINUS                                            &kp QMARK &kp HOME  &kp UP    &kp END   &kp PIPE  &kp RET
+&trans     &trans  &kp AT_SIGN &kp HASH  &kp DLLR  &trans  &trans    &trans       &trans    &trans        &kp DLLR  &kp LEFT  &kp DOWN  &kp RIGHT &kp QMARK &kp DQT
                                  &trans   &kp RCTL &kp RALT &kp RCMD &mo 1         &mo 2     &kp SPACE &kp DEL  &kp LGUI &trans
 		      >;
 
