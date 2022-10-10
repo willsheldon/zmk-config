@@ -49,7 +49,7 @@
 //                     |  rot | OPT  | CTRL | CMD   | LOWER |                            | RAISE | SPACE | BSPC | OPT   |  rot   |
 			bindings = <
 &kp F1     &kp F2    &kp F3      &kp F4    &kp F5    &kp F6                                               &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&kp SHIFT  &trans    &trans      &trans    &kp UNDER &kp MINUS                                            &kp QMARK &kp HOME  &kp UP    &kp END   &kp PIPE  &kp RET
+&kp RSHIFT  &trans    &trans      &trans    &kp UNDER &kp MINUS                                            &kp QMARK &kp HOME  &kp UP    &kp END   &kp PIPE  &kp RET
 &trans     &trans  &kp AT_SIGN &kp HASH  &kp DLLR  &trans  &trans    &trans       &trans    &trans        &kp DLLR  &kp LEFT  &kp DOWN  &kp RIGHT &kp QMARK &kp DQT
                                  &trans   &kp RCTL &kp RALT &kp RCMD &mo 1         &mo 2     &kp SPACE &kp DEL  &kp LGUI &trans
 		      >;
