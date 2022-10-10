@@ -8,4 +8,4 @@ It follows the layout found here:
 http://www.keyboard-layout-editor.com/#/gists/04c8c0cf7266dd9b2c57cdab89ae8baf
 
 Which looks like this:
-![keyboard keymap image])https://github.com/willsheldon/zmk-config/raw/main/kyria_keymap.png)
+![keyboard keymap image](https://github.com/willsheldon/zmk-config/raw/main/kyria_keymap.png)
